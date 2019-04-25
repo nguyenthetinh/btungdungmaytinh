@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAYTINH</title>
+</head>
+<body>
+<form>
+    CACULATOr
+    <input type="number" id="ha">   <input type="number" id="hi"><br/><br/>
+    <button type="button" onclick="cong()">Addition(+)</button>
+    <button type="button" onclick="tru()">Subtraction(-)</button>
+    <button type="button" onclick="nhan()">Multiplication(x)</button>
+    <button type="button" onclick="chia()">Division(/)</button>
+    <script>
+        function cong() {
+            let ha=parseInt(document.getElementById("ha").value)
+            let hi=parseInt(document.getElementById("hi").value)
+            kq= ha + hi ;
+            document.getElementById("rs").innerHTML=kq
+        }
+        function tru() {
+            let ha=parseInt(document.getElementById("ha").value)
+            let hi=parseInt(document.getElementById("hi").value)
+            kq= ha - hi;
+            document.getElementById("rs").innerHTML=kq
+        }
+        function nhan() {
+            let ha=parseInt(document.getElementById("ha").value)
+            let hi=parseInt(document.getElementById("hi").value)
+            kq= ha * hi;
+            document.getElementById("rs").innerHTML=kq
+        }
+        function chia() {
+            let ha=parseInt(document.getElementById("ha").value)
+            let hi=parseInt(document.getElementById("hi").value)
+            kq= ha / hi;
+            document.getElementById("rs").innerHTML=kq
+        }
+    </script>
+    <font><p id="rs"></p></font>
+</form>
+</body>
+</html>
